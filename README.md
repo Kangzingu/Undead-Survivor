@@ -1,4 +1,4 @@
 # Undead-Survivor
 
 ## 1주차
-![Uploading 20230607_영상.gif…]()
+![20230607_영상](https://github.com/Kangzingu/Undead-Survivor/assets/34128052/ed508d29-b6c5-409c-9d9d-ab706e8d6d01)
