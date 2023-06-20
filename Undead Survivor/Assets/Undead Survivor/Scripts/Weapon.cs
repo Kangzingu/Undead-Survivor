@@ -20,6 +20,11 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
+        if (!GameManager.instance.isLive)
+        {
+            return;
+        }
+
         switch (id)
         {
             case 0:
@@ -77,11 +82,11 @@ public class Weapon : MonoBehaviour
         switch (id)
         {
             case 0:
-                speed = 150;
+                speed = 150 * Character.WeaponSpeed;
                 Batch();
                 break;
             default:
-                speed = 0.3f;
+                speed = 0.3f * Character.WeaponRate;
                 break;
         }
 
@@ -115,7 +120,7 @@ public class Weapon : MonoBehaviour
             bullet.Rotate(rotVec);
             bullet.Translate(bullet.up * 1.5f, Space.World);
 
-            bullet.GetComponent<Bullet>().Init(damage, -1, Vector3.zero); // -1 is Inifinite Per
+            bullet.GetComponent<Bullet>().Init(damage, -100, Vector3.zero); // -100 is Inifinite Per
         }
     }
 
@@ -135,5 +140,7 @@ public class Weapon : MonoBehaviour
 
         bullet.rotation = Quaternion.FromToRotation(Vector3.up, dir);
         bullet.GetComponent<Bullet>().Init(damage, count, dir);
+
+        AudioManager.instance.PlaySfx(AudioManager.Sfx.Range);
     }
 }
