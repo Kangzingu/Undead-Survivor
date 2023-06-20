@@ -5,4 +5,4 @@
 ## 2주차
 영상 찍는거 까먹ㅎ
 ## 3주차
-![20230621_영상](https://github.com/Kangzingu/Undead-Survivor/assets/34128052/7a3f8a41-f3fa-4ee2-a878-9bc3d23d8dad)
+![20230621_영상](https://github.com/Kangzingu/Undead-Survivor/assets/34128052/c73945b0-637f-4e83-b8fe-8c9df9dac41f)
